@@ -8,10 +8,12 @@ module Botty
       register Sinatra::Reloader
     end
 
-    get '/api' do
-      content_type :json
+    get '/' do
+      'Botty'
+    end
 
-      {a: "Facebook Messenger", b: 2, c: 5}.to_json
+    post '/api' do
+      Channel.instance.message(JSON.parse(request.body.read))
     end
   end
 end

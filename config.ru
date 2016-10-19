@@ -1,3 +1,4 @@
 require "./lib/botty"
 
-Rack::Handler.default.run(Botty::Api, :Port => 8889)
+use Botty::FayeMiddleware
+run Botty::Api

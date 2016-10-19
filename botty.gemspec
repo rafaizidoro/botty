@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra", "~> 1.4", ">= 1.4.7"
   spec.add_dependency "foreman", "~> 0.82.0"
   spec.add_dependency "sequel", "~> 4.39"
+  spec.add_dependency "puma", "~> 3.6"
+  spec.add_dependency "faye-websocket", "~> 0.10.4"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
