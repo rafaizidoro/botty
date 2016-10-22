@@ -1,0 +1,19 @@
+.toolbar {
+  background-color: #3C579D;
+  border: 1px solid #253B71;
+  flex: 1;
+}
+
+.toolbar-content {
+  width: 860px;
+  margin: auto;
+  padding: 2px;
+}
+
+.toolbar-content h1 {
+  margin: 0;
+}
+
+.toolbar-content img {
+  vertical-align: middle;
+}
